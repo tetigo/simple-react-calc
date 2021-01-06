@@ -1,9 +1,7 @@
-import React, { } from 'react'
-import ReactDOM from 'react-dom'
 import CalcService from './calc.service'
 
 describe('teste do CalcService', () => {
-    const [calcular, SOMA, SUBTRACAO, MULTIPLICACAO, DIVISAO] = CalcService();
+    const [calcular, concatenaNumero, SOMA, SUBTRACAO, MULTIPLICACAO, DIVISAO] = CalcService();
     it('deve garantir que 1 + 4 = 5', () => {
         let soma = calcular(1, 4, SOMA);
         expect(soma).toEqual(5);
